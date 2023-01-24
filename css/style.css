@@ -1,5 +1,12 @@
 .debug{
     border: 1px solid salmon;
+    padding: 5px;
+}
+
+
+ul{
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
