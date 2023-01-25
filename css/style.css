@@ -50,6 +50,10 @@ ul.header-option{
 /***********/
 
 /*****header main*****/
+.header-main{
+    padding: 30px 15px;
+}
+
 div.enter-data{
     width:100%;
 }
@@ -63,4 +67,10 @@ div.enter-data{
 div.enter-data button{
     max-width: max-content;
     margin-right: 5px;
+}
+
+.header-main .app button{
+    background-color: #1b53e8ed;
+    border-radius: 9999px;
+    margin: 0px 5px;
 }

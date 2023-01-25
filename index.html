@@ -55,19 +55,50 @@
            </div>
         </aside>
         <main class="flex-grow-1 overflow-y-auto">
-            <header class="header-main d-md-flex flex-md-row justify-content-md-between bg-primary text-white">
-                <div class="new-student order-md-5">
+            <header class="header-main d-flex flex-column flex-md-row row g-4 row g-md-0  justify-content-md-between align-items-baseline bg-primary text-white">
+                <div class="new-student order-md-5 col-md-3 col-lg-2">
                     <span>Nuovo Studente</span> 
                     <button class="btn btn-primary border-1 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i class="fa-solid fa-plus"></i>
                     </button>   
                 </div> 
 
-                <div class="app debug">
-                    <div class="plane debug"></div>
-                    <div class="our-app debug"></div>
+                <div class="app col-md-3 col-lg-auto">
+                    <div class="plane d-flex align-items-center">
+                        <h3>Boolean </h3>
+                        <button class="border-0 text-white">
+                            Piano blaze
+                        </button>
+                    </div>
+                   
+                    <div class="our-app d-flex align-items-center">
+                        <button class="border-0 text-white">
+                            3 app
+                        </button>
+                        <i class="fa-solid fa-greater-than"></i>
+                        <i class="fa-solid fa-greater-than"></i>
+
+                        <button class="border-0 text-white d-lg-none">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <button class="border-0 text-white d-none d-lg-block">
+                            Boolean mobile app
+                        </button>
+
+                        <button class="border-0 text-white d-none d-lg-block">
+                            Boolean we app
+                        </button>
+
+                        <button class="border-0 text-white d-none d-lg-block">
+                           Boolean blog app
+                        </button>
+                    </div>
                 </div>
-                <div class="count-studen debug">cont</div>
+                <div class="count-studen col-md-3 col-lg-2">                    
+                    <p>Studenti online negli ultimi 30 minuti</p>
+                    <span class="fs-4">125</span>                                        
+                </div>
             </header>
         </main>
     </div>
