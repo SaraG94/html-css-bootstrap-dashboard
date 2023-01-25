@@ -55,12 +55,12 @@ ul.header-option{
 }
 
 div.enter-data{
-    width:100%;
+    --bs-offcanvas-width: 100vw;
 }
 
 @media screen and (min-width:769px){
-    div.enter-data{
-        width:50%;
+    div.enter-data{    
+        --bs-offcanvas-width: 50vw;
     }
 }
 
