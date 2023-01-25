@@ -74,3 +74,18 @@ div.enter-data button{
     border-radius: 9999px;
     margin: 0px 5px;
 }
+/************/
+
+/***tabella classi***/
+section{
+    padding: 20px 15px 0px;
+}
+
+.class-ready tbody img{
+    max-width: 30px;
+}
+
+.class-ready tbody span.ready{
+    border-radius: 10px;
+    padding: 0 8px;
+}
