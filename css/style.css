@@ -9,10 +9,14 @@ ul{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
     height: 100vh;
 }
-
+/**header**/
 header.header-content{
     height: 70px;
 }
@@ -27,4 +31,20 @@ aside.nav-main{
     aside.nav-main{
         width: 150px;
     }
+}
+
+.search{
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.search i{
+    padding-right: 10px;
+}
+
+ul.header-option{
+    margin: auto 10px;
+    padding: 0;
 }
