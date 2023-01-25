@@ -16,7 +16,7 @@ img{
 body{
     height: 100vh;
 }
-/**header**/
+/**header content**/
 header.header-content{
     height: 70px;
 }
@@ -34,7 +34,6 @@ aside.nav-main{
 }
 
 .search{
-    border: 1px solid black;
     border-radius: 8px;
     margin: 0 10px;
     padding: 0 10px;
@@ -47,4 +46,21 @@ aside.nav-main{
 ul.header-option{
     margin: auto 10px;
     padding: 0;
+}
+/***********/
+
+/*****header main*****/
+div.enter-data{
+    width:100%;
+}
+
+@media screen and (min-width:769px){
+    div.enter-data{
+        width:50%;
+    }
+}
+
+div.enter-data button{
+    max-width: max-content;
+    margin-right: 5px;
 }

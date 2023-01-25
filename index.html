@@ -44,7 +44,7 @@
         </div>       
     </header>
 
-    <div class="content d-flex flex-grow-1 overflow-hidden debug">
+    <div class="content d-flex flex-grow-1 overflow-hidden">
 
         <aside class="debug flex-shrink-0 overflow-hidden nav-main d-flex flex-column">
             <div class="nav-main-menu debug">
@@ -54,9 +54,15 @@
                 
            </div>
         </aside>
-        <main class="debug flex-grow-1 overflow-y-auto">
-            <header class="header-main d-md-flex flex-md-row justify-content-md-between debug">
-                <div class="new-student order-md-5 debug">new s</div>
+        <main class="flex-grow-1 overflow-y-auto">
+            <header class="header-main d-md-flex flex-md-row justify-content-md-between bg-primary text-white">
+                <div class="new-student order-md-5 debug">
+                    <span>Nuovo Studente</span> 
+                    <button class="btn btn-primary border-1 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>   
+                </div> 
+
                 <div class="app debug">
                     <div class="plane debug"></div>
                     <div class="our-app debug"></div>
@@ -64,6 +70,74 @@
                 <div class="count-studen debug">cont</div>
             </header>
         </main>
+    </div>
+
+    <!--offcanvas-->
+    <div class="w-50 enter-data offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="row">
+                <div class="mb-2 col-md-6">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="">
+                </div>
+
+                <div class="mb-2 col-md-6">
+                    <label for="" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="">
+                </div>
+
+                <div class="mb-2 col-md-6">
+                  <label for="" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-2 col-md-6">
+                  <label for="e" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="">
+                </div>
+
+                <div class="mb-2">
+                    <label for="" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="">
+                </div>
+
+                <div class="mb-2 col-md-6">
+                    <label for="" class="form-label">Citt&agrave;</label>
+                    <input type="text" class="form-control" id="">
+                </div>
+
+                <div class="mb-2 col-md-4">
+                    <label for="" class="form-label">Stato</label>
+                    <select class="form-select form-select mb-3" aria-label=".form-select">
+                        <option selected>Scegli..</option>
+                        <option value="1">Italia </option>
+                        <option value="2">Francia</option>
+                        <option value="3">Germania</option>
+                      </select>
+                </div>
+                
+                <div class="mb-2 col-md-2">
+                    <label for="" class="form-label">Cap</label>
+                    <input type="text" class="form-control" id="">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="formFile" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                <div class="mb-2 form-check">
+                  <input type="checkbox" class="form-check-input" id="">
+                  <label class="form-check-label" for="">Seleziona per proseguire</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="submit" class="btn btn-warning">Svuota</button>
+              </form>
+        </div>
     </div>
 </body>
 </html>
